@@ -7,11 +7,17 @@
     <title>Document</title>
     <link href="dist/output.css" rel="stylesheet" />
 
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!---->
+
+    <!-- Font Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <!---->
   </head>
-  <body class="bg-gradient-to-b from-blue-200 to-white font-dmsans">
+  <body class="bg-gradient-to-b from-blue-200 to-white font-dmsans overflow-x-hidden">
     <div class="px-5 md:px-10 w-full h-12 lg:px-32 my-8 flex items-center justify-between relative z-10">
       <div class="flex items-center">
         <div class="flex items-center justify-center bg-blue-800 rounded-full w-10 h-10 text-white mr-2">><</div>
@@ -30,7 +36,7 @@
         <button class="bg-slate-100 py-2 px-6 rounded-lg font-semibold text-md hidden md:block">Download</button>
       </div>
     </div>
-    <img class="absolute right-0 h-1/2 lg:h-110 top-0" src="src/image/bg-header.png" alt="" srcset="" />
+    <img data-aos="fade-left" data-aos-duration="2000" class="absolute right-0 h-1/2 lg:h-110 top-0" src="src/image/bg-header.png" alt="" srcset="" />
 
     <div class="w-full px-5 md:px-10 lg:px-32 flex flex-col-reverse md:flex-row items-center relative lg:py-10">
       <div class="md:w-3/5">
@@ -42,7 +48,7 @@
         </div>
       </div>
       <div class="">
-        <img class="" src="src/image/group-header.png" alt="" srcset="" />
+        <img src="src/image/group-header.png" alt="" srcset="" />
       </div>
     </div>
 
@@ -54,7 +60,7 @@
 
       <!-- card -->
       <div class="grid md:grid-cols-3 gap-1 md:gap-7 mt-10 relative">
-        <div class="p-6 lg:p-12 rounded-lg group hover:bg-sky-800">
+        <div data-aos="fade-right" data-aos-duration="1000" class="p-6 lg:p-12 rounded-lg group hover:bg-sky-800">
           <div class="flex items-center justify-center bg-sky-900 w-10 h-10 md:w-16 md:h-16 rounded-lg">
             <svg class="w-5 h-5 md:w-8 md:h-8" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M15.9855 16.875V28.125" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
@@ -77,7 +83,8 @@
           <h1 class="text-sky-800 group-hover:text-white transition ease-in-out delay-300 font-bold text-xl md:text-2xl my-4">For Designer</h1>
           <p class="text-sky-800 group-hover:text-white transition ease-in-out delay-500 text-base">Busy designers want to share insights, such as tips, tricks or other types of insights. Focus on content not on design.</p>
         </div>
-        <div class="p-6 lg:p-12 hover:bg-sky-800 rounded-lg group">
+
+        <div data-aos="fade-up" data-aos-duration="2000" class="p-6 lg:p-12 hover:bg-sky-800 rounded-lg group">
           <div class="flex items-center justify-center bg-sky-900 w-10 h-10 md:w-16 md:h-16 rounded-lg">
             <svg class="w-5 h-5 md:w-8 md:h-8" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_2_32)">
@@ -94,7 +101,8 @@
           <h1 class="font-bold text-xl md:text-2xl my-4 text-sky-800 group-hover:text-white transition ease-in-out delay-150">For Coder</h1>
           <p class="text-base text-sky-800 group-hover:text-white transition ease-in-out delay-500">Coders who want to share snippets, tools, or tips and tricks. No design skills required: just duplicate, edit and export!</p>
         </div>
-        <div class="group p-6 lg:p-12 hover:bg-sky-800 rounded-lg">
+
+        <div data-aos="fade-left" data-aos-duration="1000" class="group p-6 lg:p-12 hover:bg-sky-800 rounded-lg">
           <div class="flex items-center justify-center bg-sky-900 w-10 h-10 md:w-16 md:h-16 rounded-lg">
             <svg class="w-5 h-5 md:w-8 md:h-8" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -122,7 +130,7 @@
     <!-- Pre-designer -->
     <div class="w-full px-5 md:px-10 lg:px-32 md:flex items-center justify-between relative py-5">
       <img class="absolute right-0 top-0" src="src/image/pre-o.png" alt="" srcset="" />
-      <div class="md:w-1/2">
+      <div data-aos="fade-right" data-aos-duration="1000" class="md:w-1/2">
         <h1 class="text-3xl text-sky-900 font-bold leading-10">There are <span class="underline">80+ Pre-Designed</span> Templates Ready to Use</h1>
         <p class="text-base my-4 text-slate-500">
           Many design choices make it free for you to make a different design every time you post. There are 80+ designs with 10+ different layouts. Each layout has several designs with the same theme, just need to focus on the content!
@@ -141,14 +149,14 @@
         </div>
       </div>
 
-      <img class="md:w-3/5 relative" src="src/image/pre-design.png" alt="" srcset="" />
+      <img data-aos="fade-left" data-aos-duration="2000" class="md:w-3/5 relative" src="src/image/pre-design.png" alt="" srcset="" />
     </div>
 
     <!-- tamplate -->
     <div class="w-full px-5 md:px-10 lg:px-32 flex flex-col-reverse md:flex-row items-center justify-between relative py-5">
       <img class="absolute left-0 top-0" src="src/image/bg-design.png" alt="" srcset="" />
-      <img class="md:w-1/2 relative" src="src/image/tamplate.png" alt="" srcset="" />
-      <div class="md:w-3/5">
+      <img data-aos="fade-left" data-aos-duration="2000" class="md:w-1/2 relative" src="src/image/tamplate.png" alt="" srcset="" />
+      <div data-aos="fade-right" data-aos-duration="1000" class="md:w-3/5">
         <h1 class="text-3xl text-sky-900 font-bold leading-10">Design Templates Are Highly Customizable, <span class="underline">it's easy to use!</span></h1>
         <p class="text-base my-4 text-slate-500">
           All design templates are ready to use, meaning you only need to focus on content or if necessary, adjust some properties such as color, font, font size and other properties to match your brand.
@@ -169,7 +177,7 @@
     </div>
 
     <!-- Preview -->
-    <div class="w-full h-full px-5 md:px-10 lg:px-32 relative py-20">
+    <div data-aos="fade-up" data-aos-duration="1000" class="w-full h-full px-5 md:px-10 lg:px-32 relative py-20">
       <img class="absolute inset-0 h-full w-full" src="src/image/bg-priview.png" alt="" srcset="" />
       <div class="relative md:w-4/5 md:m-auto text-center">
         <button class="md:text-base font-semibold p-2 w-32 relative bg-slate-200 text-sky-900 uppercase rounded-lg mb-4">Preview</button>
@@ -188,34 +196,34 @@
         </p>
         <div class="w-full h-16 font-bold rounded-md flex items-center justify-between px-4 text-sky-900 hover:text-white hover:bg-sky-600">
           <h2 class="text-lg">Preview For Instagram</h2>
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+          <svg data-aos="fade-left" data-aos-duration="3000" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
           </svg>
         </div>
         <div class="w-full h-16 font-bold rounded-md flex items-center justify-between px-4 text-sky-900 hover:text-white hover:bg-sky-600">
           <h2 class="text-lg">Preview For Instagram</h2>
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+          <svg data-aos="fade-left" data-aos-duration="3000" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
           </svg>
         </div>
         <div class="w-full h-16 font-bold rounded-md flex items-center justify-between px-4 text-sky-900 hover:text-white hover:bg-sky-600">
           <h2 class="text-lg">Preview For Instagram</h2>
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+          <svg data-aos="fade-left" data-aos-duration="3000" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
           </svg>
         </div>
       </div>
       <img class="relative z-10 md:w-1/2" src="src/image/img-optimize.png" alt="" srcset="" />
-      <img class="absolute bottom-0 right-0 z-0" src="src/image/bg-optimize.png" alt="" srcset="" />
+      <img data-aos="fade-up" data-aos-duration="3000" class="absolute bottom-0 right-0 z-0" src="src/image/bg-optimize.png" alt="" srcset="" />
     </div>
 
     <!-- socialfeed -->
     <div class="px-5 md:px-10 lg:px-32 flex flex-col-reverse lg:flex-row py-12 justify-between">
       <img class="absolute h-1/2 left-0 z-0" src="src/image/bg-socialfeed.png" alt="" srcset="" />
-      <div class="relative lg:w-3/5 mt-5">
+      <div data-aos="fade-right" data-aos-duration="1000" class="relative lg:w-3/5 mt-5">
         <img class="" src="src/image/img-socialfeed.png" alt="" srcset="" />
       </div>
-      <div class="relative lg:w-1/2">
+      <div data-aos="fade-left" data-aos-duration="1000" class="relative lg:w-1/2">
         <h1 class="font-semibold text-3xl text-sky-900">Figma Social Feeds is Free For <span class="text-sky-500 underline">Personal</span> or <span class="text-sky-500 underline">Commercial</span> Use</h1>
         <p class="my-2">Figma Social Feeds is licensed under CC BY 4.0, which means you are free to use template designs for personal or commercial purposes with attribution to the template design creator.</p>
         <div class="flex items-center my-2">
@@ -306,7 +314,7 @@
     </div>
 
     <!-- FOOTER -->
-    <div class="w-full overflow-hidden relative px-5 md:px-10 lg:px-32 pt-20">
+    <div data-aos="fade-up" data-aos-duration="3000" class="w-full overflow-hidden relative px-5 md:px-10 lg:px-32 pt-20">
       <div class="absolute w-full h-full bg-sky-900 -rotate-2 scale-125 mt-10"></div>
       <div class="md:grid grid-cols-4 gap-4 relative text-slate-200 md:my-20">
         <div class="col-span-2">
@@ -351,5 +359,9 @@
       </div>
       <div class="w-full relative py-5 border-slate-300 border-t-2 text-slate-200">COPYRIGHT © 2022 — DESIGN NAUVAL</div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
