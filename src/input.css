@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: 'DM sans', sans-serif;
+}
+.hamburger-line {
+  @apply w-2/5 h-[2px] bg-white mx-auto;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply origin-top-left rotate-45 mr-[8px];
+}
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+.hamburger-active > span:nth-child(3) {
+  @apply origin-bottom-left -rotate-45 mr-[8px];
+}
+.menu-list-active {
+  @apply flex flex-col items-center;
+}

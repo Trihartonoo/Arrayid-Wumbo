@@ -1,17 +1,22 @@
 module.exports = {
-  content: ['./src/**/*.{html,js}'],
+  content: ['index.html'],
   theme: {
     extend: {
       height: {
+        140: '148vh',
+        150: '150vh',
         110: '110vh',
       },
-      lineHeight: {
-        75: '75px',
+      width: {
+        94: '94%',
+        98: '98%',
       },
       fontFamily: {
-        dmsans: ['DM Sans'],
-        serif: ['sans-serif'],
+        DMsans: ['DM Sans'],
+        sora: ['sora'],
+        poppins: ['poppins'],
       },
     },
   },
+  plugins: [],
 };

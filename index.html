@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Array ID || Wumbo</title>
     <link href="dist/output.css" rel="stylesheet" />
 
     <!-- AOS Library -->
@@ -17,29 +17,48 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
     <!---->
   </head>
-  <body class="bg-gradient-to-b dark:bg-slate-200 from-blue-200 to-white font-dmsans">
-    <div class="px-5 md:px-10 w-full h-12 lg:px-32 my-8 flex items-center justify-between relative z-10 overflow-hidden">
-      <div class="flex items-center">
-        <div class="flex items-center justify-center bg-blue-800 rounded-full w-10 h-10 text-white mr-2">><</div>
-        <h1 class="font-bold text-xl">Wumbo</h1>
+  <body class="bg-gradient-to-b dark:bg-slate-200 from-blue-200 to-white">
+    <nav class="fixed w-full z-20">
+    <div class="px-5 md:px-10 w-full lg:px-32 py-4 flex items-center justify-between relative z-10 overflow-hidden Navbar">
+      <div class="flex items-center justify-center">
+        <div class="flex items-center justify-center bg-blue-800 rounded-full w-10 h-10 text-xl text-white mr-2">><</div>
+        <h1 class="font-bold text-xl text-blue-900">Wumbo</h1>
       </div>
-
-      <div class="items-center hidden md:flex">
+      <div class="items-center hidden md:flex text-gray-900">
         <a href="" class="mx-4 font-bold">Top</a>
         <a href="" class="mx-4">For Everyone</a>
         <a href="" class="mx-4">Featur</a>
         <a href="" class="mx-4">Preview</a>
         <a href="" class="mx-4">License</a>
       </div>
+      <div class="hidden md:flex">
+        <button class="hover:bg-opacity-100 transition duration-300 bg-slate-100 bg-opacity-60 py-2 px-6 rounded-lg font-semibold text-md hidden md:block">Download</button>
+      </div>
 
+      <!-- Menu Mobile -->
+      <button id="hamburger" name="hamburger" class="flex flex-col items-center justify-center gap-1 w-10 h-10 bg-blue-800 rounded-full md:hidden">
+        <span class="hamburger-line transition duration-700"></span>
+        <span class="hamburger-line transition duration-700"></span>
+        <span class="hamburger-line transition duration-700"></span>
+      </button>
+    </div>
+    </div>
+    <div class="w-1/2  float-right py-4 gap-4 mx-5 bg-blue-500 text-white hidden justify-center mt-2 rounded-md z-20 menu-list transition ease-in duration-500">
+      <div class= "flex flex-col items-center gap-4">
+        <a href="" class="mx-4 font-bold">Top</a>
+        <a href="" class="mx-4">For Everyone</a>
+        <a href="" class="mx-4">Featur</a>
+        <a href="" class="mx-4">Preview</a>
+        <a href="" class="mx-4">License</a>
+      </div>
       <div>
-        <button class="bg-slate-100 py-2 px-6 rounded-lg font-semibold text-md hidden md:block">Download</button>
+        <button class="bg-white text-blue-900 rounded-lg font-semibold text-md px-4 py-1">Download</button>
       </div>
     </div>
-   
+  </nav>
     <img class="absolute right-0 h-1/2 lg:h-110 top-0" src="src/image/bg-header.png" alt="" srcset="" />
-  </div>
-    <header class="w-full px-5 md:px-10 lg:px-32 flex flex-col-reverse md:flex-row items-center relative lg:py-10">
+
+    <header class="w-full px-5 md:px-10 lg:px-32 flex flex-col-reverse md:flex-row items-center relative pt-20">
       <div class="md:w-3/5">
         <h1 class="text-3xl lg:text-6xl text-sky-900 lg:leading-75">Beautiful Design For <span class="font-bold underline">Social Media</span> Content</h1>
         <h2 class="lg:text-xl mt-5 text-slate-600">Figma social media content templates for branding, marketing, insights, and more. Free for personal and commercial use!</h2>
@@ -358,8 +377,9 @@
           </div>
         </div>
       </div>
-      <div class="w-full relative py-5 border-slate-300 border-t-2 text-slate-200"> 2022 — DESIGN NAUVAL@ArrayId</div>
+      <div class="w-full relative py-5 border-slate-300 border-t-2 text-slate-200">2022 — DESIGN NAUVAL@ArrayId</div>
     </div>
+ <script src="src/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
