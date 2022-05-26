@@ -8,8 +8,8 @@ hamburger.addEventListener('click', () => {
 });
 document.addEventListener('scroll', () => {
   if (window.scrollY > 80) {
-    Navbar.style.backgroundColor = '#3b82f6';
+    Navbar.classList.add('Navbar-scroll');
   } else {
-    Navbar.style.backgroundColor = 'transparent';
+    Navbar.classList.remove('Navbar-scroll');
   }
 });

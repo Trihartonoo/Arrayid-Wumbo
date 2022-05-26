@@ -21,3 +21,6 @@ body {
 .menu-list-active {
   @apply flex flex-col items-center;
 }
+.Navbar-scroll {
+  @apply bg-blue-600 bg-opacity-80 text-white transition duration-1000;
+}
