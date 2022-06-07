@@ -22,5 +22,8 @@ body {
   @apply absolute transition duration-1000 translate-x-0 right-0;
 }
 .Navbar-scroll {
-  @apply bg-blue-300 bg-opacity-90 text-blue-900 transition duration-1000;
+  @apply bg-sky-900 text-white transition duration-1000;
+}
+.Logo-scroll {
+  @apply bg-transparent;
 }
