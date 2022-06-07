@@ -6,17 +6,17 @@ body {
   font-family: 'DM sans', sans-serif;
 }
 .hamburger-line {
-  @apply w-2/5 h-[2px] bg-white mx-auto;
+  @apply w-1/2 h-[2px] bg-white mx-auto;
 }
 
 .hamburger-active > span:nth-child(1) {
-  @apply origin-top-left rotate-45 mr-[8px];
+  @apply origin-top-left rotate-45 mr-[6px];
 }
 .hamburger-active > span:nth-child(2) {
   @apply scale-0;
 }
 .hamburger-active > span:nth-child(3) {
-  @apply origin-bottom-left -rotate-45 mr-[8px];
+  @apply origin-bottom-left -rotate-45  mr-[6px];
 }
 .menu-list-active {
   @apply absolute transition duration-1000 translate-x-0 right-0;
